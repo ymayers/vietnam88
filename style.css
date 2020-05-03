@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  width: 76%;
+  padding-top: 6%;
+  margin: 0 auto;
+  /* background-color: grey; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+#burger {
+  display: none;
+}
+
+header h1 {
+  /* margin-right: .5em; */
+  color: #b62222;
+  font-family: "Black Han Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 75px;
+  font-weight: 100;
+  letter-spacing: 0.2em;
+}
+nav {
+  height: 50px;
+  margin-top: 28px;
+  font-family: "Abel", sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 0em;
+}
+nav a {
+  text-decoration: none;
+  color: #101010;
+  padding: 0.3em;
+}
+
+#x {
+  display: none;
+}
+
+/* nav a:nth-child(1) {
+  display: none;
+} */
+
+main {
+  margin-top: 3%;
+}
+
+/* section {
+  height: 70vh;
+} */
+
+/* llukkah - using this CSS section code messes with the styling of the about section.  I'm assuming it's just a placeholder of css to distinguish the different sections of the page before stylings go in (?)*/
+.hero {
+  width: 100%;
+  max-width: 1092px;
+  height: 100%;
+  object-fit: cover;
+  height: 70vh;
+}
+.hero img {
+  max-width: 1092px;
+  height: 70vh;
+  width: 100%;
+}
+#about {
+  background-color: #f0ece0;
+  font-family: "Abel", sans-serif;
+  font-size: 24px;
+  color: #101010;
+  text-align: center;
+}
+.about-p {
+  padding: 70px 50px;
+}
+.about-visit {
+  margin-top: 30px;
+}
+.highlights-category-right {
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+  color: #101010;
+  padding: 20px;
+  /* width: 250px; */
+  width: 275px;
+  text-align: right;
+  background-color: white;
+  top: 40%;
+  left: 10%;
+  transform: translate(30%, -10%);
+}
+.highlights-category-left {
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+  color: #101010;
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  background-color: white;
+  top: 40%;
+  right: 10%;
+  transform: translate(-30%, 0%);
+}
+.highlights-noodle-soups {
+  margin-top: 50px;
+}
+.highlights-rice-dishes,
+.highlights-sandwiches,
+.highlights-desserts {
+  margin-top: 30px;
+}
+.highlights-photo-noodle-soups,
+.highlights-photo-sandwiches,
+.highlights-photo-rice-dishes,
+.highlights-photo-desserts {
+  height: 23vh;
+  /* max-width: 100%;
+  width: 800px; */
+  max-width: 800px;
+  width: 100%;
+}
+.highlights-photo-noodle-soups img,
+.highlights-photo-sandwiches img,
+.highlights-photo-rice-dishes img,
+.highlights-photo-desserts img {
+  width: 100%;
+  height: 165px;
+  max-width: 800px;
+  height: 100%;
+  object-fit: cover;
+  height: 23vh;
+}
+.quotes {
+  font-size: 26px;
+  color: #101010;
+  max-width: 600px;
+}
+.quotations {
+  font-family: "Catamaran", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #101010;
+}
+.highlights-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.highlights-left {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.highlights-desserts .reviews-left,
+.highlights-rice-dishes .reviews-left {
+  text-align: center;
+  margin-left: 100px;
+}
+.highlights-noodle-soups .reviews-right,
+.highlights-sandwiches .reviews-right {
+  text-align: center;
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+
+.menu-link {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: #f0ece0;
+  margin-top: 3em;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.menu-link-holder {
+  display: flex;
+  background-color: #b62222;
+  height: 84px;
+  width: 304px;
+  text-align: center;
+  align-self: center;
+}
+
+.menu-switch {
+  color: #f8f8f8;
+  font-size: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+}
+
+#home-link {
+  text-decoration: none;
+}
+
+.menu-image {
+  height: 100%;
+  width: 100%;
+  transition: width 2s, height 2s;
+}
+
+.menu {
+  display: flex;
+  text-align: center;
+}
+
+.menu-image-container {
+  align-items: center;
+  margin-bottom: 3em;
+}
+
+#footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  width: 1200px;
+  height: 375px;
+  background-color: #b62222;
+  font-weight: lighter;
+  font-size: 20px;
+  color: #f0ece0;
+}
+
+.restaurant-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 22px;
+  margin: 3em 3em 0.4em 3em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #101010;
+}
+
+.footer-text {
+  margin-bottom: 0.3em;
+}
+
+.hours {
+  text-align: center;
+}
+
+.address {
+  text-align: center;
+}
+
+.soup-icon {
+  height: 100px;
+  width: 100px;
+  margin-top: 0.5em;
+}
+
+.services {
+  margin-top: 0.75em;
+  font-size: 17px;
+}
+
+.contact {
+  text-align: center;
+  font-weight: 100;
+}
+
+.social-media {
+  margin-top: 2em;
+}
+
+.right-branch-container {
+  display: flex;
+  width: 20%;
+  height: 375px;
+  margin: 0 0 0 -45%;
+}
+
+.left-branch-container {
+  display: flex;
+  width: 20%;
+  height: 375px;
+}
+
+.branch-left {
+  width: 55px;
+  height: 375px;
+  margin-right: 0.5em;
+}
+
+.branch-left-mid {
+  width: 55px;
+  height: 375px;
+  margin: 0 0 0 -1.5em;
+  z-index: 1;
+}
+
+.branch-right-first {
+  margin: 0 -0.75em 0 0;
+  width: 55px;
+  height: 375px;
+  transform: translate(55%, 0%);
+  position: relative;
+  z-index: 2;
+}
+
+.branch-right-mid {
+  margin: 0 -0.75em 0 -0.4em;
+  width: 55px;
+  height: 375px;
+  transform: translate(55%, 0%);
+  position: relative;
+  z-index: 1;
+}
+
+.branch-right {
+  margin: 0 -0.5em;
+  width: 55px;
+  height: 375px;
+  transform: translate(55%, 0%);
+  position: relative;
+}
