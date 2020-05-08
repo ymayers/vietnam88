@@ -123,11 +123,12 @@
   }
   .hero img {
     width: 100%;
-    max-width: 375px;
+    /* max-width: 375px; */
     height: 20vh;
   }
   .hero {
     height: 20vh;
+    margin: 0 auto;
   }
   #about {
     width: 100%;
